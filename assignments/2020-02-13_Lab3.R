@@ -31,6 +31,13 @@ summary(lovett)
 lovett %>%
     descr()
 
+summary_ploidy <- polyploid %>%
+  summarise(mean_ploidy = mean(ploidy),
+            median_ploidy = median(ploidy),
+            IQR_ploidy = IQR(ploidy),
+            sd_ploidy = sd(ploidy),
+            var_ploidy = var(ploidy))
+
 
 # Plot boxplots of SO4 and Modified SO4 using the code below.  
 # You do not need to write any new code for this part!

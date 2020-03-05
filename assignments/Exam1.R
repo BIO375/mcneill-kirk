@@ -34,5 +34,6 @@ ggplot(cricket) +
   geom_histogram(aes(log1cricket), binwidth = .2)+
   facet_wrap(~feedingStatus)
 
+# Code breaks because you assign different names to the data in line 22 and line 26, 30, 33
 
 

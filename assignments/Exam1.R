@@ -24,14 +24,14 @@ View(chap13e5SagebrushCrickets)
 
   
 ggplot(cricket) +
-  geom_histogram(aes(timeToMating), binwidth = 2)+
+  geom_histogram(aes(timeToMating), binwidth = 1)+
   facet_wrap(~feedingStatus)
 
 cricket <- cricket %>%
   mutate(log1cricket = log(timeToMating + 1))
 
 ggplot(cricket) +
-  geom_histogram(aes(log1cricket), binwidth = .2)+
+  geom_histogram(aes(log1cricket), binwidth = .1)+
   facet_wrap(~feedingStatus)
 
 

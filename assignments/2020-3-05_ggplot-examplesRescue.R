@@ -19,11 +19,11 @@ library(tidyverse)
 
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy))
-### this is a simple template for a dot plot with just 2 variables, aes just allows us to put in what variables we want on each axis.
+### this is a simple template for a dot plot with just 2 variables
 
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy, color = class))
-### this dot plot is a bit more complicated but separates a third variable by color which is seen as class in this example. 
+### this dot plot is a bit more complicated but seperates a third variable by color which is seen as class in this example. 
 
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy)) + 
@@ -36,7 +36,7 @@ ggplot(data = mpg) +
 
 ggplot(data = mpg) + 
   geom_smooth(mapping = aes(x = displ, y = hwy, linetype = drv))
-### same as the previous one but now adds the third variable and you can distinguish it by linetype
+### same as the previous one but now adds the third variable and you can destinguish it by linetype
 
 ggplot(economics_long, aes(date, value01, colour = variable)) +
   geom_line()
@@ -62,7 +62,7 @@ ggplot(data = diamonds) +
 
 ggplot(data = diamonds) + 
   geom_bar(mapping = aes(x = cut, fill = clarity), position = "dodge")
-### this creates seperate bar graphs and separates them by the third variable by color which allows for easy comparison within a variable and between variables.
+### this creates seperate bar graphs and seperates them by the third variable by color which allows for easy comparison within a variable and between variables.
 
 ggplot(data = mpg, mapping = aes(x = class, y = hwy)) + 
   geom_boxplot() +
@@ -73,5 +73,4 @@ ggplot(data = diamonds)+
   geom_bar(mapping = aes(x=cut, fill = cut))+
   coord_flip()
 ### a good bar graph which is visually aesthetic with different colors separating the classes of the variable and has a clear legend on the left side.
-
 

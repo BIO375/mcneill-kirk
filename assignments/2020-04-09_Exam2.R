@@ -76,3 +76,10 @@ ggplot(algae) +
                shape=21, 
                size=3)
 t.test(growthrate ~ treatment, data = algae, var.equal = TRUE, alternative = "two.sided", conf.level = 0.95)
+
+
+
+
+
+
+

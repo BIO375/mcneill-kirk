@@ -35,3 +35,11 @@ summ_heartattack <- HeartAttack_short %>%
             n_heartattack = n())
 
 ratio <-(max(summ_heartattack$sd_cholest))/(min(summ_heartattack$sd_cholest))
+
+
+
+### 8/10, code breaks because files not read in ####
+# Did not read in either data file.  So what you are missing in each case
+# is a line of code that looks like this:
+# HeartAttack_short <- read_csv("datasets/demos/HeartAttack_short.csv")
+# Without that line your code does not work

@@ -89,3 +89,6 @@ ggplot(sanchez)+
   geom_boxplot(aes(x = COLTYPE, y = BEETLE96), varwidth = TRUE)
 ggplot(sanchez)+
   geom_boxplot(aes(x = COLTYPE, y = log1beetle), varwidth = TRUE)
+
+
+# Did not read in the sanchez file. 9/10 ####

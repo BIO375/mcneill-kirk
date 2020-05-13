@@ -78,7 +78,11 @@ ggplot(algae) +
 t.test(growthrate ~ treatment, data = algae, var.equal = TRUE, alternative = "two.sided", conf.level = 0.95)
 
 
-
+# Error line 16 did not read in baker file, variable names all lower case
+# instead of capitalized,did not correctly create diff variable until line 29,
+# so could not have t-test in line 27 run correctly.  Script does not create
+# variables called logAfter or logBefore so mutate function in line 49 cannot 
+# run.  5/5
 
 
 
